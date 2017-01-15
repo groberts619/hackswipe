@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="app">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hackswipe</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
+<body>
+    <br>
+    <div class="container" ng-controller="">
+        <form ng-submit="">
+            <div class="input-group">
+                <input type="text" class="form-control" ng-model="" placeholder="Search photos!">
+                <span class="input-group-btn">
+					<button class="btn" ng-click="search.findShow(search.showInput)" type="button">Go!</button>
+				</span>
+            </div>
+        </form>
+        <br>
+        <div class="jumbotron">
+            <div class="container" id="jumboContainer">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>Hackswipe</h1>
+                        <h4>Swipe and pick what photos you like and we'll pick which destination is right for you. </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 24px;">
+            <div class="col-sm-4" ng-repeat="" id="outputs">
+                <div class="panel">
+                    <div class="panel-heading text-center">{{}}</div>
+                    <div class="panel-body text-center">
+                        <img ng-src={{photo}}>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
